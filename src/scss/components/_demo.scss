@@ -17,7 +17,7 @@
         transition: 0.3s;
 
         &:active {
-            transform: scale(0.9);
+            transform: scale(0.95);
         }
 
         @media (max-width: 769px) {
@@ -43,14 +43,17 @@
         box-shadow: -1px 0px 29px -5px rgb(123, 160, 189);
         cursor: pointer;
         transition: 0.8s;
+        filter: invert(15%);
 
         &:hover {
             box-shadow: -1px 0px 40px 1px rgb(123, 160, 189);
+            filter: invert(0%);
         }
 
         &:checked {
             flex-grow: 8;
             box-shadow: -1px 0px 40px 1px rgb(123, 160, 189);
+            filter: invert(0%);
         }
 
         &:nth-child(1) {
