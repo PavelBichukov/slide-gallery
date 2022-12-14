@@ -412,6 +412,10 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+.demo__form-button:hover {
+  color: rgb(83, 138, 219);
+  text-shadow: 0 0 2px rgb(83, 138, 219), 0 0 5px rgb(83, 138, 219), 0 0 15px rgb(83, 138, 219);
+}
 .demo__form-button:active {
   transform: scale(0.95);
 }
