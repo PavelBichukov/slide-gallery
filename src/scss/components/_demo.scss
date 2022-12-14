@@ -1,0 +1,86 @@
+.demo {
+
+    &__form-button,
+    &__tittle {
+        font-size: 40px;
+        font-family: 'Martian Mono';
+        line-height: 100px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 15px #fff;
+    }
+
+    &__form-button {
+        font-size: 20px;
+        align-self: flex-start;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:active {
+            transform: scale(0.9);
+        }
+
+        @media (max-width: 769px) {
+            align-self: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__flex-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__form-item {
+        min-height: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        border-radius: 20px;
+        box-shadow: -1px 0px 29px -5px rgb(123, 160, 189);
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            box-shadow: -1px 0px 40px 1px rgb(123, 160, 189);
+        }
+
+        &:checked {
+            flex-grow: 8;
+            box-shadow: -1px 0px 40px 1px rgb(123, 160, 189);
+        }
+
+        &:nth-child(1) {
+            background: url(../../assets/images/astronaut.jpg) no-repeat center;
+            background-size: auto 100%;
+        }
+
+        &:nth-child(2) {
+            background: url(../../assets/images/camera.jpg) no-repeat center;
+            background-size: auto 100%;
+        }
+
+        &:nth-child(3) {
+            background: url(../../assets/images/coffe.jpg) no-repeat center;
+            background-size: auto 100%;
+        }
+
+        &:nth-child(4) {
+            background: url(../../assets/images/doors.jpg) no-repeat center;
+            background-size: auto 100%;
+        }
+
+        &:nth-child(5) {
+            background: url(../../assets/images/oranges.jpg) no-repeat center;
+            background-size: auto 100%;
+        }
+
+        &:nth-child(6) {
+            background: url(../../assets/images/table.jpg) no-repeat 0 50%;
+            background-size: auto 100%;
+        }
+    }
+}
